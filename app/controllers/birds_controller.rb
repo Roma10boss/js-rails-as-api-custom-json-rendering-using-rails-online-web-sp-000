@@ -5,7 +5,7 @@ class BirdsController < ApplicationController
   end
   
   def show
-    bbirds = Bird.all
+    birds = Bird.all
   render json: birds, except: [:created_at, :updated_at]
   end
 end
